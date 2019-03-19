@@ -64,7 +64,7 @@ async function eeval(code) {
   });
 
   function print(e) {
-      send.lia("log", e + "\n");
+      console.log(e);
   }
 
   const sleep = (milliseconds) => {
@@ -78,7 +78,7 @@ async function eeval(code) {
     await eval(evalString).catch(function(e) {
       reportError(e);
     });
-    send.lia("eval", "LIA: stop");
+    send.lia("LIA: stop");
   }
   catch(e) {
     reportError(e);
@@ -156,7 +156,7 @@ es sich um den eigentlichen Regler, also P, I, D und die die Kombinationen
 daraus, sowie weiter Arten. In den folgenden Abschnitten werden wir die
 verschieden Reglerarten noch näher erläutern.
 
-````
+````````````
                                                         Störgröße -+
                                                            d(t)    |
  Führungsgröße     Regelabweichung           Stellgröße            v
@@ -166,7 +166,7 @@ verschieden Reglerarten noch näher erläutern.
                 ^                                                           |
                 |___________________________________________________________|
                                 (Rückführung der Messgröße)
-````
+````````````
 
                                  --{{4}}--
 Betrachten wir das Beispiel nochmal kurz aus den Blickwinkel eines Autofahrers
@@ -200,7 +200,7 @@ Güteforderungen[^1] hinzukommen und wurde schließlich ein Regler gefunden, so
 müssen noch dessen Parameter angepasst werden.
 
 
-````
+````````````
 
     +-----> Prozess (Aufgabe) -----+
     |                              |
@@ -211,7 +211,7 @@ müssen noch dessen Parameter angepasst werden.
     ^                              |
     |                              |
     +---------- Regler??? <--------+
-````
+````````````
 
                            --{{1}}--
 Die wichtigsten klassischen Regler sollen im Folgenden kurz vorgestellt werden.
@@ -228,7 +228,7 @@ In ihrer einfachsten Form spricht man von einem verzögerungsfreien P-Regler,
 dabei verändert sich der Wert der Stellgröße $u(t)$ proportional zur
 Regelabweichung $e(t)$:
 
-$$ u(t) = K_{P} * e(t)$$
+$$ u(t) = K_{P} * e(t) $$
 
                                --{{1}}--
 Der statische Faktor $K_{P}$ gibt die Stärke an, mit der der P-Regler auf die
@@ -252,7 +252,7 @@ Integration der Regeldifferenz $e(t)$ gebildet. Die Stellgröße strebt dabei
 nur einem konstanten Wert zu, wenn die Regeldifferenz mit fortschreitender Zeit
 $t$ gegen null geht.
 
-$$T_I \dot{u}(t) = e(t), u(0) = u_0$$
+$$ T_I \dot{u}(t) = e(t), u(0) = u_0 $$
 
                                  --{{1}}--
 Das verzögerungsfreie I-Glied wird durch die Differenzialgleichung mit $T_I$ als
