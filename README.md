@@ -252,7 +252,7 @@ Integration der Regeldifferenz $e(t)$ gebildet. Die Stellgröße strebt dabei
 nur einem konstanten Wert zu, wenn die Regeldifferenz mit fortschreitender Zeit
 $t$ gegen null geht.
 
-$$ T_I \dot{u}(t) = e(t), u(0) = u_0 $$
+$$ T_{I} \dot{u}(t) = e(t), u(0) = u_{0} $$
 
                                  --{{1}}--
 Das verzögerungsfreie I-Glied wird durch die Differenzialgleichung mit $T_I$ als
@@ -260,7 +260,7 @@ Integrationskonstanten, beschrieben. Nach dem Hauptsatz der Differenzial- und
 Integralgleichung erhält man für den Anfangswert $u(0) = u_0$ die eindeutige
 Lösung:
 
-{{1}} $$ u(t) = \frac{1}{T_I} * \int_{0}^{t} e(t) dt + u_0 $$
+{{1}} $$ u(t) = \frac{1}{T_I} * \int_{0}^{t} e(t) dt + u_{0} $$
 
 
                                   --{{2}}--
@@ -351,7 +351,7 @@ Regler nicht schwingt und den Soll-Wert auch exakt erreicht. Das schwächste
 Glied im Bunde ist der D-Anteil, der bei starken Änderungen des Fehlers für eine
 schnelle Reaktion sorgen soll, jedoch mit Rauschen sehr viele Probleme hat.
 
-{{1}} $$ K_P > K_I > K_D $$
+{{1}} $$ K_P \gt K_I \gt K_D $$
 
 ### 3.2 Simulation
 
