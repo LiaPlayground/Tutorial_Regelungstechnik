@@ -3,15 +3,16 @@ author:   André Dietrich
 
 email:    andre.dietrich@ovgu.de
 
-version:  1.0.0
+version:  1.0.1
 
 language: de
 
-date:     06/12/18
+narrator: Deutsch Male
 
-narrator: Deutsch Female
+logo:     https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Einfacher_Regelkreis_n.svg/500px-Einfacher_Regelkreis_n.svg.png
 
-comment:  Eine kleine Einführung in die Grundlagen der Regelungstechnik.
+comment:  Dies soll eine kleine interaktive Einführung in die Grundlagen der
+          Regelungstechnik sein.
 
 script:   https://canvasjs.com/assets/script/canvasjs.min.js
 
